@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,8 +9,12 @@ public class Main {
         String tb_project ="./project.csv";
 
         int index = getIndexByNameColumnPegawai("id_pegawai");
-        System.out.println(getdataByColumn(tb_pegawai,0,1,2,3));
-        System.out.println(getdataByColumn(tb_project, 0,1,2));
+        Scanner input = new Scanner(System.in);
+        System.out.println("Masukkan SQL Statement : \n");
+
+        //        System.out.println(getdataByColumn(tb_pegawai,0,1,2,3));
+        //        System.out.println(getdataByColumn(tb_project, 0,1,2));
+
     }
 
     static int getIndexByNameColumnPegawai(String nameColumn){
